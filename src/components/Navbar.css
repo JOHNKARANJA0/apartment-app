@@ -1,0 +1,48 @@
+.left-navbar {
+  width: 250px;
+  background-color: #f8f9fa;
+  position: fixed;
+  height: 100%;
+  overflow: hidden; /* Hide the content when collapsed */
+  transition: width 0.3s, overflow 0.3s;
+}
+
+.left-navbar.collapsed {
+  width: 50px;
+}
+
+.collapse-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+.navbar-content {
+  padding: 10px;
+}
+
+.navbar-brand {
+  margin: 10px 0;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 10px 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}

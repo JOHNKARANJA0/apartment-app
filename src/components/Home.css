@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .home-section {
+    background: url('https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg') no-repeat center center/cover;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .display-4, .display-5 {
+    color: #f8f9fa;
+    font-size: 2.5rem;
+  }
+  
+  .fw-extrabold {
+    font-weight: 800;
+  }
+  
+  .text-primary {
+    color: #007bff;
+  }
+  
+  .mt-4 {
+    margin-top: 1.5rem;
+  }
+  
+  .fs-4 {
+    font-size: 1.25rem;
+  }
+  
+  .fs-5 {
+    font-size: 1rem;
+  }
+  
+  /* Button Styles */
+  .btn {
+    border-radius: 0.25rem;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: #fff;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
+  .shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
+  
+  /* Contact Section Styles */
+  .contact-section {
+    margin-top: 5rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  /* Blog Section Styles */
+  .blog-section {
+    margin-top: 5rem; /* Adjust margin-top to prevent overlap with header */
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    width: 18rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-img-top {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-top: -4rem;
+    border: 2px solid #007bff;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Ensure cards are displayed side by side */
+  .d-flex.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }

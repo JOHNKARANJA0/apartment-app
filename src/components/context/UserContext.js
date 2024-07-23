@@ -12,13 +12,13 @@ export const UserProvider = ({children}) => {
 
    const [currentUser, setCurrentUser] = useState(null);
 
-   console.log('====================================');
-   console.log(authToken);
-   console.log('====================================');
+//    console.log('====================================');
+//    console.log(authToken);
+//    console.log('====================================');
 
 // Register User
     const register = (name, email, password) => {
-        fetch('http://127.0.0.1:8000/users', {
+        fetch('https://apartment-app-sever.onrender.com/users', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -51,7 +51,7 @@ export const UserProvider = ({children}) => {
 
 // Login User
     const login =  (email, password) => {
-        fetch('http://127.0.0.1:8000/login', {
+        fetch('https://apartment-app-sever.onrender.com/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -88,7 +88,7 @@ export const UserProvider = ({children}) => {
   function logout(){
 
 
-        fetch('http://127.0.0.1:8000/logout', {
+        fetch('https://apartment-app-sever.onrender.com/logout', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -113,7 +113,7 @@ export const UserProvider = ({children}) => {
 
   useEffect(() => {
     if(authToken){
-        fetch('http://127.0.0.1:8000/check_session', {
+        fetch('https://apartment-app-sever.onrender.com/check_session', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
