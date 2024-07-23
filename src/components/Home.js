@@ -1,7 +1,9 @@
 import React from 'react';
 import './Home.css'; // Make sure to create this CSS file to include the styles
+import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
+  const nav = useNavigate()
   return (
     <section className="home-section">
       <div className="container py-5 py-lg-0 min-vh-100 d-flex flex-column align-items-center justify-content-center">
@@ -14,12 +16,12 @@ export default function Home() {
             Welcome to the ultimate solution for apartment management. Our app helps landlords, property managers, and tenants streamline apartment management tasks. From tracking maintenance requests to managing tenant information and payments, we've got you covered!
           </p>
           <div className="mt-4 d-flex flex-wrap justify-content-center gap-4">
-            <a
+          <button
               className="btn btn-primary text-white px-4 py-2 shadow-sm"
-              href="/dashboard"
+              onClick={() => nav('/dashboard')}
             >
               Get Started
-            </a>
+            </button>
             <a
               className="btn btn-secondary text-white px-4 py-2 shadow-sm"
               href="#contact"
