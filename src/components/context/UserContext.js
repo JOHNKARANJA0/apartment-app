@@ -17,7 +17,7 @@ export const UserProvider = ({children}) => {
 //    console.log('====================================');
 
 // Register User
-    const register = (name, email, password) => {
+    const register = (name, email, user_type, password) => {
         fetch('https://apartment-app-sever.onrender.com/users', {
             method: 'POST',
             headers: {
@@ -26,6 +26,7 @@ export const UserProvider = ({children}) => {
             body: JSON.stringify({
                 name: name,
                 email: email,
+                user_type: user_type,
                 password: password 
             })
         })

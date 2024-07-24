@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
     <div className={`left-navbar ${isCollapsed ? 'collapsed' : ''}`}>
       <button onClick={toggleCollapse} className="collapse-button">
-        {isCollapsed ? '>' : '<'}
+        <span className={`icon ${isCollapsed ? 'collapsed-icon' : 'expanded-icon'}`} />
       </button>
       {!isCollapsed && (
         <div className="navbar-content">

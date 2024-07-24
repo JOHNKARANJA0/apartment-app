@@ -18,7 +18,7 @@ export default function Home() {
           <div className="mt-4 d-flex flex-wrap justify-content-center gap-4">
           <button
               className="btn btn-primary text-white px-4 py-2 shadow-sm"
-              onClick={() => nav('/dashboard')}
+              onClick={() => nav('/login')}
             >
               Get Started
             </button>
